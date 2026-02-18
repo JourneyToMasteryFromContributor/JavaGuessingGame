@@ -22,21 +22,19 @@ public class GuessingGame {
         String input;
         scan = new Scanner(System.in);
 
-        // Ask the user if they want to play
         System.out.println("Do you want to play a game (y/n)?");
         input = scan.nextLine();
 
-        // Only proceed if the user says "y"
+        // Only proceed if the user inputs "y"
         if (input.equals("y")) {
-            // Start the game
+            // Start
             playGame();
         } else {
             System.out.println("Maybe next time!");
         }
     }
 
-    private void playGame() {
-        // Generate the secret number for the game
+    private void playGame() { 
         secretNumber = generateSecretNumber();
 
         // Allow the user up to maxGuesses to guess the number
@@ -84,3 +82,4 @@ public class GuessingGame {
         System.out.println("MAX_GUESSES: " + maxGuesses);
     }
 }
+
