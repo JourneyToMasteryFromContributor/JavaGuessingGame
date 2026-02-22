@@ -7,7 +7,7 @@ public class GuessingGame {
     private int response;
     private int secretNumber;
 
-    private int maxGuesses = 6;
+    private int maxGuesses = 10;
     private int lowerBound = 0;
     private int upperBound = 100;
 
@@ -82,4 +82,5 @@ public class GuessingGame {
         System.out.println("MAX_GUESSES: " + maxGuesses);
     }
 }
+
 
