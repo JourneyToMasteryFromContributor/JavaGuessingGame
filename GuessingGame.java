@@ -23,9 +23,9 @@ public class GuessingGame {
         scan = new Scanner(System.in);
 
         System.out.println("Do you want to play a game (y/n)?");
-        input = scan.nextLine();
+        input = scan.nextLine().trim().toLowerCase();
 
-        // Only proceed if the user inputs "y"
+        // User can enter either Y or y
         if (input.equals("y")) {
             // Start
             playGame();
